@@ -1,0 +1,197 @@
+:root {
+    --primary-color: #ff675b;
+    ;
+    --text-color: #333;
+    --white-text: #fff;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main {
+    overflow: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+/* Dáng cuộn*/
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0px 5px gray;
+    border-radius: 20px;
+}
+
+
+/* Xử lý */
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+    border-radius: 10px;
+}
+
+.btnScrollTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: 1.6rem;
+    z-index: 10000;
+    opacity: 0;
+    outline: none;
+    transition: all 0.5s;
+    visibility: hidden;
+}
+
+.btnScrollTop.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.btn {
+    background-color: var(--primary-color);
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 50px;
+    color: var(--white-text);
+    border-radius: 5px;
+    outline: none;
+    font-size: 1.6rem;
+    box-shadow: none;
+    text-transform: uppercase;
+}
+
+
+.heading-title {
+    font-size: 1.8rem;
+    padding: 80px 0px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Footer */
+
+
+/* Footer main */
+
+.footer {
+    background-color: #07478a;
+    min-height: 200px;
+    color: white;
+    font-size: 1.4rem;
+}
+
+.footer__widgets {
+    padding: 60px 0;
+}
+
+.footer__mid-title {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+}
+
+.footer__mid-link {
+    display: flex;
+}
+
+.footer__link ul {
+    list-style: none;
+    cursor: pointer;
+}
+
+.footer__link ul>li {
+    padding: 10px 0;
+}
+
+.footer__link ul>li:hover {
+    text-decoration: underline;
+}
+
+.footer__mid-address>p {
+    margin-bottom: 16px;
+}
+
+.footer__mid-address>p>i {
+    margin-right: 6px;
+    color: var(--primary-color);
+}
+
+.footer__mid-social>a {
+    color: white;
+    font-size: 2.6rem;
+    margin-right: 16px;
+}
+
+.footer__content>p {
+    line-height: 2.4rem;
+    font-size: 1.6rem;
+}
+
+
+/*  */
+
+.footer__bottom {
+    min-height: 100px;
+    overflow: hidden;
+    background-color: #000;
+    color: var(--white-text);
+    text-align: center;
+    line-height: 3rem;
+    font-size: 1.4rem;
+}
+
+
+/* END FT */
+
+@keyframes FadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.mb-24 {
+    margin-bottom: 24px;
+}
+
+.mb-80 {
+    margin-bottom: 80px;
+}
+
+.mb-60 {
+    margin-bottom: 60px;
+}
+
+.mt-24 {
+    margin-top: 24px;
+}
+
+.mr-24 {
+    margin-right: 24px;
+}
+
+.pl-14 {
+    padding-left: 14px;
+}
+
+.pr-14 {
+    padding-right: 14px;
+}
+

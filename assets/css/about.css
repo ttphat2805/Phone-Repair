@@ -1,0 +1,168 @@
+
+
+/* HEADER */
+
+.header__top {
+    border-bottom: 1px solid #ccc;
+    font-size: 1.4rem;
+    color: #171F32;
+}
+
+.header__wrapper {
+    min-height: 40px;
+    height: 100%;
+}
+
+.header-icon,
+.open__time,
+.header__topbar-right {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.header-icon>.fab {
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.header {
+    margin-top: 6px;
+    display: flex;
+    align-items: center;
+}
+
+
+/* HEADER NAV */
+
+.nav__list {
+    justify-content: space-between;
+    display: flex;
+    list-style: none;
+}
+
+.nav__item>.nav__link {
+    display: inline-block;
+    font-size: 1.8rem;
+    color: #171F32;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.nav__item>.nav__link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: var(--primary-color);
+    transition: width .3s;
+}
+
+.nav__item>.nav__link:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+.nav__item>.nav__link.active::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+
+/* HEADER PAGE */
+
+.header__page {
+    background-image: url('../img/banner-about.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 5%;
+    color: var(--white-text);
+}
+
+.page__title {
+    font-size: 2rem;
+}
+
+.page__title-breadcrumbs p {
+    font-size: 1.6rem;
+}
+
+.page__title-breadcrumbs p a {
+    color: var(--white-text);
+    text-decoration: none;
+}
+
+
+/* END HEADER */
+
+
+/* Start: Who */
+
+.who__we {
+    background-image: linear-gradient( to right, #f2f2f2, #e0e0e0);
+}
+
+.wwa__wrapper-content p,
+.wwa__bot-text p {
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    color: var(--text-color);
+    text-align: justify;
+}
+
+.wwa__wrapper-img img {
+    position: absolute;
+    width: 45%;
+    height: 56%;
+}
+
+.wwa__bottom {
+    background-image: linear-gradient( to left, #f2f2f2, #e0e0e098);
+    padding: 48px 0;
+}
+
+
+/* END */
+
+
+/* Process S*/
+
+.process__item {
+    border: 1px solid #ccc;
+    padding: 16px;
+}
+
+.process__img img {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.process__title {
+    margin-bottom: 16px;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+
+.process__title b {
+    color: var(--primary-color);
+}
+
+.process__text {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    color: var(--text-color);
+    text-align: justify;
+}
+
+
+/* Gallery */
+
+.gallery {
+    background-color: rgba(204, 204, 204, 0.644);
+    padding-bottom: 60px;
+}
+
+.gallery__content>.col>a>img {
+    max-width: 100%;
+    height: auto;
+}

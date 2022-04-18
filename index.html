@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/img/icon-web.png">
+    <!-- Font Awesome Icon -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.3/css/all.css">
+    <!-- Font Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <title>Trang Chủ</title>
+</head>
+
+<body onload="loadAnh()">
+    <div class="main">
+        <app-header></app-header>
+        <!-- Start: Slide  -->
+        <section class="slide">
+            <div class="slide__img">
+                <img id="anh" src="./assets/img/slide0.jpg" alt="">
+                <div id="next" class="header__slide-btn" onclick="next()">
+                    <i class="far fa-chevron-right"></i>
+                </div>
+                <div id="back" class="header__slide-btn" onclick="prev()">
+                    <i class="far fa-chevron-left"></i>
+                </div>
+            </div>
+            <div class="overlay__slide"></div>
+            <div class="silde__text">
+                <div class="slide__text-heading">Mang tiện ích của bạn trở lại cuộc sống</div>
+                <div class="slide__text-label">Thiết bị của bạn có vấn đề gì<br />Hãy để trung tâm của tôi chăm sóc
+                </div>
+                <div class="slide__click-btn">
+                    <span class="btn">Xem dịch vụ</span>
+                </div>
+            </div>
+            <div class="slide__contact">
+                <div class="slide__contact-title">
+                    <h2>TRẢ LẠI MẪU GỐC VÀO THIẾT BỊ CỦA BẠN. HÃY GỌI CHO CHÚNG TÔI</h2>
+                </div>
+                <div class="slide__contact-btn btn">
+                    <a href=""><i class="fas fa-check"></i> Liên hệ Chúng Tôi</a>
+                </div>
+            </div>
+        </section>
+        <!-- WE REPAIR -->
+        <section class="we__repair">
+            <div class="container wide">
+                <div class="repair__title heading-title">
+                    <h1>Chuyên sửa chữa</h1>
+                </div>
+                <div class="row pl-14">
+                    <div class="col l-4 m-6 c-12">
+                        <div class="rp-flex mb-80 mb-80">
+                            <div class="repair__icon">
+                                <i class="fal fa-mobile"></i>
+                            </div>
+                            <div class="repair__text l-o-1 c-o-1">
+                                <div class="repair__text-title">Điện thoại</div>
+                                <div class="repair__text-text">Bất kì thiết bị nào chúng tôi cũng cố gắng sữa chữa thay đổi toàn diện sản phẩm. Để đáp ứng như cầu của quý khách tốt nhất</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col l-4 m-6 c-12">
+                        <div class="rp-flex mb-80">
+                            <div class="repair__icon">
+                                <i class="fal fa-camera-retro"></i>
+                            </div>
+                            <div class="repair__text l-o-1 c-o-1 m-o-1">
+                                <div class="repair__text-title">Máy ảnh</div>
+                                <div class="repair__text-text">Bất kì thiết bị nào chúng tôi cũng cố gắng sữa chữa thay đổi toàn diện sản phẩm. Để đáp ứng như cầu của quý khách tốt nhất</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-4 m-6 c-12">
+                        <div class="rp-flex mb-80">
+                            <div class="repair__icon">
+                                <i class="fal fa-desktop-alt"></i>
+                            </div>
+                            <div class="repair__text l-o-1 c-o-1 m-o-1">
+                                <div class="repair__text-title">Máy tính</div>
+                                <div class="repair__text-text">Bất kì thiết bị nào chúng tôi cũng cố gắng sữa chữa thay đổi toàn diện sản phẩm. Để đáp ứng như cầu của quý khách tốt nhất</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col l-4 m-6 c-12">
+                        <div class="rp-flex mb-80">
+                            <div class="repair__icon">
+                                <i class="fal fa-tablet"></i>
+                            </div>
+                            <div class="repair__text l-o-1 c-o-1 m-o-1">
+                                <div class="repair__text-title">Tablet</div>
+                                <div class="repair__text-text">Bất kì thiết bị nào chúng tôi cũng cố gắng sữa chữa thay đổi toàn diện sản phẩm. Để đáp ứng như cầu của quý khách tốt nhất</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col l-4 m-6 c-12">
+                        <div class="rp-flex mb-80">
+                            <div class="repair__icon">
+                                <i class="fal fa-camera-movie"></i>
+                            </div>
+                            <div class="repair__text l-o-1 c-o-1 m-o-1">
+                                <div class="repair__text-title">Máy quay phim</div>
+                                <div class="repair__text-text">Bất kì thiết bị nào chúng tôi cũng cố gắng sữa chữa thay đổi toàn diện sản phẩm. Để đáp ứng như cầu của quý khách tốt nhất</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col l-4 m-6 c-12">
+                        <div class="rp-flex mb-80">
+                            <div class="repair__icon">
+                                <i class="fal fa-gamepad-alt"></i>
+                            </div>
+                            <div class="repair__text l-o-1 c-o-1 m-o-1">
+                                <div class="repair__text-title">Máy game</div>
+                                <div class="repair__text-text">Bất kì thiết bị nào chúng tôi cũng cố gắng sữa chữa thay đổi toàn diện sản phẩm. Để đáp ứng như cầu của quý khách tốt nhất</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END REPAIR -->
+        <!-- Start: Services -->
+        <section class="services">
+            <div class="container wide">
+                <div class="services__title heading-title">
+                    <h1>Dịch vụ chúng tôi</h1>
+                </div>
+                <div class="row">
+                    <div class="col l-4 m-6 c-12">
+                        <div class="service__item mb-80">
+                            <div class="service__item-img">
+                                <img src="./assets/img/service1.jpg" alt="">
+                            </div>
+                            <div class="service__item-heading">
+                                <p>Sữa Mac & PC</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col l-4 m-6 c-12">
+                        <div class="service__item">
+                            <div class="service__item-img">
+                                <img src="./assets/img/service2.jpg" alt="">
+                            </div>
+                            <div class="service__item-heading">
+                                <p>Thiết bị game</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col l-4 m-6 c-12">
+                        <div class="service__item">
+                            <div class="service__item-img">
+                                <img src="./assets/img/service3.jpg" alt="">
+                            </div>
+                            <div class="service__item-heading">
+                                <p>Vấn đề Wifi</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col l-4 m-6 c-12">
+                        <div class="service__item">
+                            <div class="service__item-img">
+                                <img src="./assets/img/service4.jpg" alt="">
+                            </div>
+                            <div class="service__item-heading">
+                                <p>Giải quyết vấn đề vô nước</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col l-4 m-6 c-12">
+                        <div class="service__item">
+                            <div class="service__item-img">
+                                <img src="./assets/img/service5.jpg" alt="">
+                            </div>
+                            <div class="service__item-heading">
+                                <p>Mở các loại khóa</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col l-4 m-6 c-12">
+                        <div class="service__item">
+                            <div class="service__item-img">
+                                <img src="./assets/img/service6.jpg" alt="">
+                            </div>
+                            <div class="service__item-heading">
+                                <p>Va chạm vỡ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service__btn btn l-o-5 m-o-4 c-o-1">
+                        <a href="">Xem tất cả dịch vụ</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End: Services -->
+        <!-- Start: Choose us -->
+        <section class="choose">
+            <div class="container wide">
+                <div class="choose__title heading-title">
+                    <h1>Tại sao chọn tôi</h1>
+                </div>
+                <div class="row align-it">
+                    <div class="l-6 m-6 c-12">
+                        <div class="choose__item-img pl-14 hide-on-mobile">
+                            <img src="./assets/img/choose-1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="l-6 m-6 c-12">
+                        <div class="choose__item-right pr-14">
+                            <div class="choose-icon">
+                                <i class="fal fa-user"></i>
+                            </div>
+                            <div class="choose__content">
+                                <div class="choose__content-title mb-24">
+                                    <h3>ĐẢM BẢO CHẤT LƯỢNG</h3>
+                                </div>
+                                <div class="choose__content-text">
+                                    <p>Khi công nghệ tiến bộ, các thiết bị sử dụng những công nghệ này ngày càng nhỏ hơn. Điện thoại di động ngày nay có sức mạnh tính toán cao hơn so với các máy tính trước đây vốn chiếm cả một không gian.</p>
+                                </div>
+                                <div class="choose__content-more">
+                                    <a href="">Đọc thêm</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="l-6 m-6 c-12">
+                        <div class="choose__item-right pr-14">
+                            <div class="choose-icon">
+                                <i class="fal fa-edit"></i>
+                            </div>
+                            <div class="choose__content">
+                                <div class="choose__content-title mb-24">
+                                    <h3>ĐẢM BẢO DỊCH VỤ</h3>
+                                </div>
+                                <div class="choose__content-text">
+                                    <p>Khi công nghệ tiến bộ, các thiết bị sử dụng những công nghệ này ngày càng nhỏ hơn. Điện thoại di động ngày nay có sức mạnh tính toán cao hơn so với các máy tính trước đây vốn chiếm cả một không gian.</p>
+                                </div>
+                                <div class="choose__content-more">
+                                    <a href="">Đọc thêm</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="l-6">
+                        <div class="choose__item-img pr-14 hide-on-mobile">
+                            <img src="./assets/img/choose-2.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="l-6">
+                        <div class="choose__item-img pl-14  hide-on-mobile">
+                            <img src="./assets/img/choose-3.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="l-6 m-6 c-12">
+                        <div class="choose__item-right pr-14">
+                            <div class="choose-icon">
+                                <i class="fal fa-bell"></i>
+                            </div>
+                            <div class="choose__content">
+                                <div class="choose__content-title mb-24">
+                                    <h3>KHÁCH HÀNG CHẤT LƯỢNG</h3>
+                                </div>
+                                <div class="choose__content-text">
+                                    <p>Khi công nghệ tiến bộ, các thiết bị sử dụng những công nghệ này ngày càng nhỏ hơn. Điện thoại di động ngày nay có sức mạnh tính toán cao hơn so với các máy tính trước đây vốn chiếm cả một không gian.</p>
+                                </div>
+                                <div class="choose__content-more">
+                                    <a href="">Đọc thêm</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END:CHOOSE -->
+
+        <!-- Start: Ours News -->
+        <section class="our__news">
+            <div class="container wide">
+                <div class="services__title heading-title">
+                    <h1>Tin tức</h1>
+                </div>
+                <div class="row">
+                    <div class="col l-4 c-12 m-6">
+                        <div class="news__box">
+                            <div class="news__box-img">
+                                <img src="./assets/img/news-1.jpg" alt="">
+                            </div>
+                            <div class="news__box-title">
+                                <h3>CÁCH CHỌN TAI NGHE CHO SMARTPHONE CỦA BẠN</h3>
+                            </div>
+                            <div class="news__box-text">
+                                <p>
+                                    Khả năng ngăn tiếng ồn bên ngoài từ trung bình đến hoàn hảo, là nhờ kích thước nhỏ gọn nên không gây vướng víu ảnh hưởng đến kiểu tóc, bông tai, kính mắt,... của bạn.
+                                </p>
+                            </div>
+                            <div class="news__box-footer">
+                                <div class="footer__left">
+                                    <p class="pr-14"><i class="fal fa-calendar-alt"></i> T5, 2020</p>
+                                    <p><i class="fal fa-money-check-edit"></i> Note</p>
+                                    <p class="ft__left-more l-o-5 c-o-5 m-o-3"><a href="">Đọc thêm</a> </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col l-4 c-12 m-6">
+                        <div class="news__box">
+                            <div class="news__box-img">
+                                <img src="./assets/img/news-2.jpg" alt="">
+                            </div>
+                            <div class="news__box-title">
+                                <h3>CHUYỂN DỮ LIỆU TỪ BẢNG TÍNH VÀO ĐIỆN THOẠI</h3>
+                            </div>
+                            <div class="news__box-text">
+                                <p>
+                                    Khả năng ngăn tiếng ồn bên ngoài từ trung đến hoàn hảo, là nhờ kích thước nhỏ gây vướng víu ảnh hưởng đến kiểu tóc, bông tai, kính mắt,... của bạn.
+                                </p>
+                            </div>
+                            <div class="news__box-footer">
+                                <div class="footer__left">
+                                    <p class="pr-14"><i class="fal fa-calendar-alt"></i> T5, 2020</p>
+                                    <p><i class="fal fa-money-check-edit"></i> Note</p>
+                                    <p class="ft__left-more l-o-5 c-o-5"><a href="">Đọc thêm</a> </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col l-4 c-12 m-6">
+                        <div class="news__box mb-80">
+                            <div class="news__box-img">
+                                <img src="./assets/img/news-3.jpg" alt="">
+                            </div>
+                            <div class="news__box-title">
+                                <h3>ĐIỀU KHOẢN SỬ DỤNG ĐIỆN THOẠI VÀ BẢNG TÍNH Ở CÁC NƯỚC NÓNG</h3>
+                            </div>
+                            <div class="news__box-text">
+                                <p>
+                                    Smartphone nóng lên trong quá trình sử dụng là chuyện khó lòng tránh khỏi, tuy nhiên, nếu thiết bị của bạn quá nóng thì lại là vấn đề nghiêm trọng.
+                                </p>
+                            </div>
+                            <div class="news__box-footer">
+                                <div class="footer__left">
+                                    <p class="pr-14"><i class="fal fa-calendar-alt"></i> T5, 2020</p>
+                                    <p><i class="fal fa-money-check-edit"></i> Note</p>
+                                    <p class="ft__left-more l-o-5 c-o-5 m-o-3"><a href="">Đọc thêm</a> </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END: Ours News -->
+         <!-- Footer - top -->
+         <section class="footer__top">
+            <div class="l-o-1 footer__top-text">
+                <p>HÃY GỌI NGAY ĐỂ NHẬN BÁO GIÁ MIỄN PHÍ</p>
+            </div>
+            <div class="footer__top-call">
+                <a href=""><i class="fas fa-chevron-right"></i> Gọi ngay</a>
+            </div>
+        </section>
+        <!-- END FT TOP -->
+        <app-footer></app-footer>
+    </div>
+    <script src="./particials/header.js"></script>
+    <script src="./particials/footer.js"></script>
+    <script src="./assets/js/nav.js"></script>
+</body>
+
+</html>
